@@ -2,12 +2,12 @@ self.addEventListener('install', (e) =>{
     console.log('SW: install')
     const promiseCache = caches.open("cache-1").then(cache => {
         return cache.addAll([
-            'https://gustavolopez04.github.io/',
-            '/index.html',
-            '/views/dividir.html',
-            '/views/sumar.html',
-            '/views/restar.html',
-            '/views/multiplicar.html',
+            'https://gustavolopez04.github.io/service-worker-cache/',
+            'https://gustavolopez04.github.io/service-worker-cache/index.html',
+            'https://gustavolopez04.github.io/service-worker-cache/views/dividir.html',
+            'https://gustavolopez04.github.io/service-worker-cache/views/sumar.html',
+            'https://gustavolopez04.github.io/service-worker-cache/views/restar.html',
+            'https://gustavolopez04.github.io/service-worker-cache/views/multiplicar.html',
             'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css'
         ])
