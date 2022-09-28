@@ -1,6 +1,6 @@
 
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/service-worker-cache/sw.js')
+    navigator.serviceWorker.register('https://gustavolopez04.github.io/service-worker-cache/sw.js')
 }
 
 // if(window.caches){
