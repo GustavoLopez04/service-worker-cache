@@ -1,6 +1,6 @@
 
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/service-worker-cache/sw.js')
 }
 
 // if(window.caches){
