@@ -2,7 +2,7 @@ self.addEventListener('install', (e) =>{
     console.log('SW: install')
     const promiseCache = caches.open("cache-1").then(cache => {
         return cache.addAll([
-            'https://github.com/GustavoLopez04/service-worker-cache/',
+            'https://gustavolopez04.github.io/service-worker-cache/',
             '/index.html',
             '/views/dividir.html',
             '/views/sumar.html',
