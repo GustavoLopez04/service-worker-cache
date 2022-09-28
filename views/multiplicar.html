@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/views/sumar.html">Sumar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/restar.html">Restar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/multiplicar.html">Multiplicar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/dividir.html">Dividir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>Multiplicar</h1>
+  <form>
+    <div class="mb-3">
+      <label for="num1" class="form-label">Numero 1</label>
+      <input type="number" class="form-control" id="num1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="num2" class="form-label">Numero 2</label>
+      <input type="number" class="form-control" id="num2">
+    </div>
+    <button type="submit" class="btn btn-primary" id="multiplicar">Multiplicar</button>
+  </form>
+
+  <div id="res"></div>
+  <script>
+    const num1 = document.getElementById("num1")
+    const num2 = document.getElementById("num2")
+    const res = document.getElementById("res")
+    const restar = document.getElementById("multiplicar")
+
+    multiplicar.addEventListener('click', (event) => {
+
+      event.preventDefault()
+      const respuesta = parseFloat(num1.value) * parseFloat(num2.value);
+      res.innerText = "Respuesta : " + respuesta
+
+    })
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
